@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    margin-top: 5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e9e2e1;
+    color: #333;
+}
+header {
+    background-color: #a8b3ca;
+    color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    font-size: 30rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    padding-top: 1.4rem;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Logo on the left, nav on the right */
+    align-items: center; /* Vertically center items */
+    padding: 0 3em; /* Add padding for better layout */
+}
+
+.logo {
+    margin: 0; /* Remove default margin */
+    font-weight: 600; /* Make the logo bold */
+    font-size: 2em; /* Bigger font size */
+    letter-spacing: 2px; /* Add some spacing */
+}
+
+.navbar nav ul {
+    display: flex; /* Make the nav items inline horizontally */
+    gap: 2em; /* Add spacing between nav items */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0; /* Reset margin */
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffcad4;
+    text-decoration: underline;
+}
+
+.products {
+    padding: 2em;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: #ffffff;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img:hover {
+    transform: scale(1.2);
+}
+
+button {
+    background-color: #ffcad4;
+    color: #333;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffc8dd;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #d7e3fc;
+    margin-top: 2em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.alternate-left {
+    text-align: left;
+    padding: 3em;
+}
+
+.alternate-right {
+    text-align: right;
+    padding: 3em;
+}
+
+.products:nth-child(even) {
+    background-color: #c0cce0;
+}
+
+.contact {
+    scale: 150%;
+}

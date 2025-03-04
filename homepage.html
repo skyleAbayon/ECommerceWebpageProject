@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Centrale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Guitar Centrale</div>
+            <nav>
+                <ul>
+                    <li><a href="#electric-guitars">Electric Guitars</a></li>
+                    <li><a href="#bass-guitars">Bass Guitars</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                    <li><a href="#services">Services Offered</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="electric-guitars" class="products alternate-left">
+        <h2>Electric Guitars</h2>
+        <div class="product-list">
+            <div class="product fade-in"><img src="stratocaster.jpg" alt="Stratocaster"><h3>Stratocaster</h3><p>$800.00</p><button onclick="addToCart('Stratocaster', 800)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="telecaster.jpg" alt="Telecaster"><h3>Telecaster</h3><p>$750.00</p><button onclick="addToCart('Telecaster', 750)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="les_paul.jpg" alt="Les Paul"><h3>Les Paul</h3><p>$900.00</p><button onclick="addToCart('Les Paul', 900)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="sg.jpg" alt="SG"><h3>SG</h3><p>$850.00</p><button onclick="addToCart('SG', 850)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="prs.jpg" alt="PRS"><h3>PRS</h3><p>$950.00</p><button onclick="addToCart('Superstrat', 950)">Add to Cart</button></div>
+        </div>
+    </section>
+
+    <section id="bass-guitars" class="products alternate-right">
+        <h2>Bass Guitars</h2>
+        <div class="product-list">
+            <div class="product fade-in"><img src="precision_bass.jpg" alt="Precision Bass"><h3>Precision Bass</h3><p>$700.00</p><button onclick="addToCart('Precision Bass', 700)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="jazz_bass.jpg" alt="Jazz Bass"><h3>Jazz Bass</h3><p>$750.00</p><button onclick="addToCart('Jazz Bass', 750)">Add to Cart</button></div>
+        </div>
+    </section>
+    <section id="accessories" class="products alternate-left">
+        <h2>Accessories</h2>
+        <div class="product-list">
+            <div class="product fade-in"><img src="strings.jpg" alt="Strings"><h3>Strings</h3><p>$10.00</p><button onclick="addToCart('Strings', 10)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="picks.jpg" alt="Picks"><h3>Picks</h3><p>$2.00</p><button onclick="addToCart('Picks', 2)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="tuners.jpg" alt="Tuners"><h3>Tuners</h3><p>$25.00</p><button onclick="addToCart('Tuners', 25)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="straps.jpg" alt="Straps"><h3>Straps</h3><p>$15.00</p><button onclick="addToCart('Straps', 15)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="gig_bags.jpg" alt="Gig Bags"><h3>Gig Bags</h3><p>$50.00</p><button onclick="addToCart('Gig Bags', 50)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="cables.jpg" alt="Cables"><h3>Cables</h3><p>$20.00</p><button onclick="addToCart('Cables', 20)">Add to Cart</button></div>
+        </div>
+    </section>
+
+    <section id="services" class="products alternate-right">
+        <h2>Services Offered</h2>
+        <div class="product-list">
+            <div class="product fade-in"><img src="setup.jpg" alt="General Setup"><h3>General Setup</h3><p>$20.00 - $100.00</p><button onclick="addToCart('General Setup', 20)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="refretting.jpg" alt="Refretting"><h3>Refretting</h3><p>$30.00 - $50.00</p><button onclick="addToCart('Refretting', 30)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="restoration.jpg" alt="Guitar Restoration"><h3>Guitar Restoration</h3><p>$100.00</p><button onclick="addToCart('Guitar Restoration', 100)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="electronics_fix.jpg" alt="Electronics & Hardware Fix"><h3>Electronics & Hardware Fix</h3><p>$15.00</p><button onclick="addToCart('Electronics & Hardware Fix', 15)">Add to Cart</button></div>
+            <div class="product fade-in"><img src="refinishing.jpg" alt="Re-Finishing"><h3>Re-Finishing</h3><p>$150.00</p><button onclick="addToCart('Re-Finishing', 150)">Add to Cart</button></div>
+        </div>
+    </section>
+
+    <section id="contact" class="alternate-left">
+        <h2>Contact Us</h2>
+        <p>Email: supportGuitarCentrale@gmail.com</p>
+        <p>Phone: 0987 654 3210</p>
+        <p>Address: East Wing, 3rd Fl., Musica Bldg., Cebu City, Philippines</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Guitar Centrale. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
